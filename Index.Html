@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">GALKIO</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="Index.Html">Aceuille</a></li>
+                    <li><a href="bio.html">Biographie</a></li>
+                    <li><a href="RS.html">Résaux Sociaux</a></li>
+                    <li><a href="F.A.Q.html">F.A.Q.</a></li>
+                    <li><a href="acount.html">Account</a></li>
+                </ul>
+            </div>
+            <img src="images/burger.png" alt="menu hamburger" class="menu-hamburger">
+            <a href="https://app.pix.fr/accueil">Pour avoir des bases en informatique</a>
+        </nav>
+    </header>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('menu-mobile')
+        })
+    </script>
+</html>
